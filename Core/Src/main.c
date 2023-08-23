@@ -114,7 +114,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   Init1602();                         // инициализация для 4битного управления (можно изменить)
-	uint8_t DDRAM = 0;                  // адрес для первого символа, начало экрана
+	uint8_t DDRAM = 0;                  // адрес для первого символа, начало экрана, первая строка
 	
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&adcData, 1); // DMA вытаскивает с АЦП значение и отправляет 
 	Write4b_Command(0x80 | DDRAM);
