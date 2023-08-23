@@ -1,0 +1,8 @@
+main.c:67:5:main	1
+main.c:116:6:SystemClock_Config	3
+main.c:153:13:MX_GPIO_Init	1
+main.c:199:6:Strob	1
+main.c:206:6:Write_Init8b_Command	1
+main.c:216:6:Write_Init4b_Command	1
+main.c:231:6:Init1602	1
+main.c:249:6:Error_Handler	1

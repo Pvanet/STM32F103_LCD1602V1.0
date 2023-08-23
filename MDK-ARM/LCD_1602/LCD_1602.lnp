@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"lcd_1602\startup_stm32f103xb.o"
+"lcd_1602\main.o"
+"lcd_1602\stm32f1xx_it.o"
+"lcd_1602\stm32f1xx_hal_msp.o"
+"lcd_1602\stm32f1xx_hal_gpio_ex.o"
+"lcd_1602\stm32f1xx_hal_tim.o"
+"lcd_1602\stm32f1xx_hal_tim_ex.o"
+"lcd_1602\stm32f1xx_hal.o"
+"lcd_1602\stm32f1xx_hal_rcc.o"
+"lcd_1602\stm32f1xx_hal_rcc_ex.o"
+"lcd_1602\stm32f1xx_hal_gpio.o"
+"lcd_1602\stm32f1xx_hal_dma.o"
+"lcd_1602\stm32f1xx_hal_cortex.o"
+"lcd_1602\stm32f1xx_hal_pwr.o"
+"lcd_1602\stm32f1xx_hal_flash.o"
+"lcd_1602\stm32f1xx_hal_flash_ex.o"
+"lcd_1602\stm32f1xx_hal_exti.o"
+"lcd_1602\stm32f1xx_hal_adc.o"
+"lcd_1602\stm32f1xx_hal_adc_ex.o"
+"lcd_1602\system_stm32f1xx.o"
+--strict --scatter "LCD_1602\LCD_1602.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_1602.map" -o LCD_1602\LCD_1602.axf
